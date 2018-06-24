@@ -298,8 +298,8 @@
         <dependency>
             <groupId>org.xhtmlrenderer</groupId>
             <artifactId>flying-saucer-docx</artifactId>
-            <version>9.1.11</version>
-        </dependency>  
+            <version>9.1.13</version>
+        </dependency>
 	
 <!-- 
 		<dependency>

@@ -2,4 +2,6 @@
 /bin/
 /dist/
 .directory
-
+.idea
+.settings
+*.iml
