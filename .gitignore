@@ -3,3 +3,6 @@
 /dist/
 .directory
 
+.idea
+.settings
+*.iml
