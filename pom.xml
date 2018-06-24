@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
-  <parent>
-    <groupId>org.sonatype.oss</groupId>
-    <artifactId>oss-parent</artifactId>
-    <version>7</version>
-  </parent>
-	
+
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+
 	<groupId>org.docx4j</groupId>
 	<artifactId>docx4j-ImportXHTML</artifactId>
 	<name>docx4j-ImportXHTML</name>
@@ -17,16 +18,16 @@
 	</description>
 	<url>http://www.docx4java.org/</url>
 	<licenses>
-	  <license>
-	    <name>LGPL v2.1</name>
-	    <url>http://www.gnu.org/licenses/lgpl-2.1.html</url>
-	    <distribution>repo</distribution>
-	    <comments>The same license as Flying Saucer.  See legals/NOTICE for details.</comments>
-	  </license>
-  	</licenses>
+		<license>
+			<name>LGPL v2.1</name>
+			<url>http://www.gnu.org/licenses/lgpl-2.1.html</url>
+			<distribution>repo</distribution>
+			<comments>The same license as Flying Saucer.  See legals/NOTICE for details.</comments>
+		</license>
+	</licenses>
 	<scm>
-	    <developerConnection>scm:git|git@github.com:plutext/docx4j-ImportXHTML.git</developerConnection>
-    </scm>
+		<developerConnection>scm:git|git@github.com:plutext/docx4j-ImportXHTML.git</developerConnection>
+	</scm>
 	<inceptionYear>2013</inceptionYear>
 	<developers>
 		<developer>
@@ -56,14 +57,14 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	  	
+
 	<build>
 		<sourceDirectory>src/main/java</sourceDirectory>
 		<testSourceDirectory>src/test/java</testSourceDirectory>
-		<outputDirectory>bin</outputDirectory> <!--  bin-mvn -->
+		<outputDirectory>bin</outputDirectory>		<!--  bin-mvn -->
 		<testOutputDirectory>bin</testOutputDirectory>
 		<plugins>
-		<!-- 
+			<!-- 
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
@@ -115,12 +116,12 @@
 				<artifactId>maven-dependency-plugin</artifactId>
 				<version>2.0</version>
 			</plugin>
- 			<!--  mvn versions:display-dependency-updates -->
+			<!--  mvn versions:display-dependency-updates -->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>versions-maven-plugin</artifactId>
 				<version>2.2</version>
-			</plugin> 			
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -167,7 +168,7 @@
 					<maxmemory>512m</maxmemory>
 					<!-- 18 MB without the exclusion; still 15MB with -->
 					<!-- <excludePackageNames>org.plutext.jaxb.svg11:org.plutext.jaxb.xslfo</excludePackageNames> -->
-			        <additionalparam>-Xdoclint:none</additionalparam> <!-- for Java 8 -->					
+					<additionalparam>-Xdoclint:none</additionalparam>					<!-- for Java 8 -->
 				</configuration>
 				<executions>
 					<execution>
@@ -208,7 +209,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-    	<pluginManagement>
+		<pluginManagement>
 			<plugins>
 				<plugin>
 					<groupId>org.eclipse.m2e</groupId>
@@ -254,7 +255,7 @@
 					<include>XhtmlNamespaceHandler.css</include>
 					<include>xhtmlrenderer.conf</include>
 				</includes>
-			
+
 			</resource>
 			<!-- <resource> <directory>src/test/resources</directory> <excludes> <exclude>*.docx</exclude>
 				</excludes> </resource> -->
@@ -293,15 +294,15 @@
 		</plugins>
 	</reporting>
 
-    <dependencies>
+	<dependencies>
 
-        <dependency>
-            <groupId>org.xhtmlrenderer</groupId>
-            <artifactId>flying-saucer-docx</artifactId>
-            <version>9.1.14-FS2018-SNAPSHOT</version>
-        </dependency>
-	
-<!-- 
+		<dependency>
+			<groupId>org.xhtmlrenderer</groupId>
+			<artifactId>flying-saucer-docx</artifactId>
+			<version>9.1.14-FS2018-SNAPSHOT</version>
+		</dependency>
+
+		<!-- 
 		<dependency>
 			<groupId>org.docx4j</groupId>
 			<artifactId>xhtmlrenderer</artifactId>
@@ -315,21 +316,21 @@
 				</exclusions>
 		</dependency>
  -->
- 
- 
+
+
 		<dependency>
-		  <groupId>org.docx4j</groupId>
-		  <artifactId>docx4j</artifactId>
+			<groupId>org.docx4j</groupId>
+			<artifactId>docx4j</artifactId>
 			<version>3.3.6</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>1.7.21</version>
 		</dependency>
-		
-<!-- 		
+
+		<!-- 		
 		<dependency>
 		  <groupId>org.slf4j</groupId>
 		  <artifactId>slf4j-log4j12</artifactId>
@@ -343,10 +344,10 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-	 	
+
 	</dependencies>
 
-		<profiles> <!--  use -P eg mvn -Psign-artifacts  -->
+	<profiles>		<!--  use -P eg mvn -Psign-artifacts  -->
 		<profile>
 			<id>sign-artifacts</id>
 			<build>
@@ -369,5 +370,17 @@
 			</build>
 		</profile>
 
-   	</profiles>
+	</profiles>
+
+	<distributionManagement>
+		<repository>
+			<id>intellilife-nexus-releases</id>
+			<url>http://nexus.intellilife.cc/repository/maven-releases/</url>
+		</repository>
+
+		<snapshotRepository>
+			<id>intellilife-nexus-snapshots</id>
+			<url>http://nexus.intellilife.cc/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
