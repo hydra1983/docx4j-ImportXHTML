@@ -371,16 +371,4 @@
 		</profile>
 
 	</profiles>
-
-	<distributionManagement>
-		<repository>
-			<id>intellilife-nexus-releases</id>
-			<url>http://nexus.intellilife.cc/repository/maven-releases/</url>
-		</repository>
-
-		<snapshotRepository>
-			<id>intellilife-nexus-snapshots</id>
-			<url>http://nexus.intellilife.cc/repository/maven-snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
 </project>
